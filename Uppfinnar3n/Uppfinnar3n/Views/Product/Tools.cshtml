@@ -1,0 +1,13 @@
+@model ToolsViewModel
+
+<div class="row">
+    <div class="caption-full">
+        <h1>Tillbehör och verktyg</h1>
+    </div>
+    <div class="caption">
+    </div>
+    @foreach (var product in Model.Tools)
+    {
+        <partial name="_ProductCard" model="product" />
+    }
+</div>

@@ -1,0 +1,13 @@
+﻿@model PaintingViewModel
+
+<div class="row">
+    <div class="caption-full">
+        <h1>Tavlor</h1>
+    </div>
+    <div class="caption">
+    </div>
+    @foreach (var product in Model.Painting)
+    {
+        <partial name="_ProductCard" model="product" />
+    }
+</div>

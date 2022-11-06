@@ -1,0 +1,13 @@
+﻿@model WoodFigureViewModel
+
+<div class="row">
+    <div class="caption-full">
+        <h1>Träfigurer</h1>
+    </div>
+    <div class="caption">
+    </div>
+    @foreach (var product in Model.WoodFigure)
+    {
+        <partial name="_ProductCard" model="product" />
+    }
+</div>

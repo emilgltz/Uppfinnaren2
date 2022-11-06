@@ -1,0 +1,13 @@
+﻿@model ProductListViewModel
+
+<div class="row">
+    <div class="caption-full">
+        <h1>Alla produkter i vårt sortiment</h1>
+    </div>
+    <div class="caption">
+    </div>
+    @foreach (var product in Model.Products)
+    {
+        <partial name="_ProductCard" model="product" />
+    }
+</div>

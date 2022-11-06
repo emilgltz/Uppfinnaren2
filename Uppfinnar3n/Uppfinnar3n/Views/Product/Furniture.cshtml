@@ -1,0 +1,13 @@
+@model FurnitureViewModel
+
+<div class="row">
+    <div class="caption-full">
+        <h1>Möbler i trä</h1>
+    </div>
+    <div class="caption">
+    </div>
+    @foreach (var product in Model.Furniture)
+    {
+        <partial name="_ProductCard" model="product" />
+    }
+</div>

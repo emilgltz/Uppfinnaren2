@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Leffes Hantverk</title>
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro">
+    <link href="~/lib/bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <script src="~/lib/jquery/jquery.js"></script>
+    <script src="~/lib/bootstrap/js/bootstrap.js"></script>
+    <link href="~/css/site.css" rel="stylesheet" />
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a asp-controller="Home" asp-action="Index">Hem</a></li>
+                    <li><a asp-controller="Product" asp-action="List">Samtliga produkter</a></li>
+                    <li><a asp-controller="Product" asp-action="Painting">Tavlor</a></li>
+                    <li><a asp-controller="Product" asp-action="KitchenTools">Köksredskap</a></li>
+                    <li><a asp-controller="Product" asp-action="WoodFigure">Träfigurer</a></li>
+                    <li><a asp-controller="Product" asp-action="Furniture">Möbler</a></li>
+                    <li><a asp-controller="Product" asp-action="Tools">Tillbehör</a></li>
+                    <li><a asp-controller="Product" asp-action="Contact">Kontakt</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <p class="lead">
+                    <img class="img-rounded" alt="Leffes" src="~/Images/Leffeslogo.jpg" />
+                </p>
+            </div>
+            <div class="col-md-9">
+                @RenderBody()
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
